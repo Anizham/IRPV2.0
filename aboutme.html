@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<title>About me</title>
+		 <script>
+            function myfunc(){
+                var person = prompt("Enter your name");
+                if(person!=null){
+                    document.getElementById("demo").innerHTML = "Hey " + person + "!! Thanks for visiting my Page. ";
+                } 
+            }
+        </script>
+	</head>
+    <body>
+        <p id="demo"></p>
+        <h1>About Me</h1>
+        <h2>Name: Anusha P R</h2>
+        <p>I am a B.Tech, CS final year student. I am currenlty attending IRPv2.0.
+        </p>
+        
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Exploring new Techs</li>
+            <li>Reading</li>
+            <li>Painting</li>
+            <li>Cooking</li>
+            
+        </ul>
+        
+        <center><button type="button" onclick="myfunc()">Click Here</button></center>
+       
+    </body>
+</html>
