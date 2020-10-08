@@ -1,34 +1,86 @@
 <!DOCTYPE html>
 <html>
-    <head>
-		<link type="text/css" rel="stylesheet" href="style.css"/>
-		<title>About me</title>
-		 <script>
-            function myfunc(){
-                var person = prompt("Enter your name");
-                if(person!=null){
-                    document.getElementById("demo").innerHTML = "Hey " + person + "!! Thanks for visiting my Page. ";
-                } 
-            }
-        </script>
-	</head>
-    <body>
-        <p id="demo"></p>
-        <h1>About Me</h1>
-        <h2>Name: Anusha P R</h2>
-        <p>I am a B.Tech, CS final year student. I am currenlty attending IRPv2.0.
-        </p>
-        
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Exploring new Techs</li>
-            <li>Reading</li>
-            <li>Painting</li>
-            <li>Cooking</li>
+
+<head>
+     <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>About Me</title>
+    <script>
+        function myfunc(){
+            var person = prompt("Enter your name");
+            if(person!=null){
+                document.getElementById("demo").innerHTML = "Hey " + person + "," ;
+            } 
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-white navbar-expand-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand ml-auto" href="#">About Me</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
             
-        </ul>
-        
-        <center><button type="button" onclick="myfunc()">Click Here</button></center>
-       
-    </body>
+             <div class="collapse navbar-collapse" id="Navbar">
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" onclick="myfunc()" >Say Hi</button>
+                  </form>   
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-12 col-sm-6">
+                    <p>Hey, I'm </p>
+                    <h1>Anusha P R</h1>
+                </div>
+                <div class="col-12 col-sm">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col-12 col-sm-4 col-md-3">
+                <h2> Few words About me</h2>
+            </div>
+            <div class="col col-sm col-md">
+                <h2 id="demo"></h2>
+                <p>I am a B.Tech, CS final year student. I am currenlty attending IRPv2.0.
+                    I love to paint or read books during my free time. I like to explore and learn about new technologies
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row ">             
+                <div class="col-4 col-sm-2">
+                    <h5>Contact </h5>
+                    <address>
+		              <br>
+		              Ph.: +852 1234 5678<br>
+		              Email: <a href="anushapr1998@gmali.com">anushapr1998@gmali.com</a>
+		           </address>
+                </div>
+           </div>
+        </div>
+    </footer>
+    <!-- jQuery, Popper.js, Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
 </html>
